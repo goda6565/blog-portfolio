@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google"
 import "./globals.css";
-import Header from "@/components/common/Header";
+import Navigation from "@/components/common/Navigation";
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <div className="flex min-h-screen flex-col">
-          <Header/>
+          <Navigation />
           <main className="flex-1 px-2 flex justify-center">
             {children}
           </main>
@@ -27,7 +27,7 @@ export default function RootLayout({
             <div className="text-center text-sm">
               Copyright © All rights reserved |{" "}
               <a
-                href="#"
+                href="https://github.com/goda6565/blog-portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
